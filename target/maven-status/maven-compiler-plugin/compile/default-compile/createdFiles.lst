@@ -1,0 +1,11 @@
+com/shipfast/repository/VehicleRepository.class
+com/shipfast/ShipFastApplication.class
+com/shipfast/domain/Vehicle.class
+com/shipfast/domain/TripStatus.class
+com/shipfast/domain/DeliveryTrip.class
+com/shipfast/dto/CreateTripRequest.class
+com/shipfast/repository/DeliveryTripRepository.class
+com/shipfast/exception/InsufficientCapacityException.class
+com/shipfast/exception/GlobalExceptionHandler.class
+com/shipfast/controller/DeliveryTripController.class
+com/shipfast/service/DeliveryTripService.class

@@ -1,0 +1,37 @@
+-------------------------------------------------------------------------------
+Test set: com.shipfast.DeliveryTripIntegrationTest
+-------------------------------------------------------------------------------
+Tests run: 4, Failures: 3, Errors: 0, Skipped: 0, Time elapsed: 15.91 s <<< FAILURE! -- in com.shipfast.DeliveryTripIntegrationTest
+com.shipfast.DeliveryTripIntegrationTest.shouldCompleteTripWithCorrectFuelCalculation -- Time elapsed: 0.640 s <<< FAILURE!
+org.opentest4j.AssertionFailedError: 
+
+expected: COMPLETED
+ but was: PENDING
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at com.shipfast.DeliveryTripIntegrationTest.shouldCompleteTripWithCorrectFuelCalculation(DeliveryTripIntegrationTest.java:99)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+
+com.shipfast.DeliveryTripIntegrationTest.shouldCreateValidTrip -- Time elapsed: 0.407 s <<< FAILURE!
+java.lang.AssertionError: 
+
+Expected size: 1 but was: 0 in:
+[]
+	at com.shipfast.DeliveryTripIntegrationTest.shouldCreateValidTrip(DeliveryTripIntegrationTest.java:60)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+
+com.shipfast.DeliveryTripIntegrationTest.shouldRejectTripExceedingCapacity -- Time elapsed: 0.091 s <<< FAILURE!
+java.lang.AssertionError: Status expected:<400> but was:<201>
+	at org.springframework.test.util.AssertionErrors.fail(AssertionErrors.java:59)
+	at org.springframework.test.util.AssertionErrors.assertEquals(AssertionErrors.java:122)
+	at org.springframework.test.web.servlet.result.StatusResultMatchers.lambda$matcher$9(StatusResultMatchers.java:637)
+	at org.springframework.test.web.servlet.MockMvc$1.andExpect(MockMvc.java:214)
+	at com.shipfast.DeliveryTripIntegrationTest.shouldRejectTripExceedingCapacity(DeliveryTripIntegrationTest.java:80)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+

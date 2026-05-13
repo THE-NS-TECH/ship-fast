@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.shipfast.DeliveryTripIntegrationTest" time="15.908" tests="4" errors="0" skipped="0" failures="3">
+  <properties>
+    <property name="java.specification.version" value="25"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.class.path" value="/home/kalimain/workspace/ship-fast/target/test-classes:/home/kalimain/workspace/ship-fast/target/classes:/home/kalimain/.m2/repository/org/springframework/boot/spring-boot-starter-data-jpa/3.3.0/spring-boot-starter-data-jpa-3.3.0.jar:/home/kalimain/.m2/repository/org/springframework/boot/spring-boot-starter-aop/3.3.0/spring-boot-starter-aop-3.3.0.jar:/home/kalimain/.m2/repository/org/springframework/spring-aop/6.1.8/spring-aop-6.1.8.jar:/home/kalimain/.m2/repository/org/aspectj/aspectjweaver/1.9.22/aspectjweaver-1.9.22.jar:/home/kalimain/.m2/repository/org/springframework/boot/spring-boot-starter-jdbc/3.3.0/spring-boot-starter-jdbc-3.3.0.jar:/home/kalimain/.m2/repository/com/zaxxer/HikariCP/5.1.0/HikariCP-5.1.0.jar:/home/kalimain/.m2/repository/org/springframework/spring-jdbc/6.1.8/spring-jdbc-6.1.8.jar:/home/kalimain/.m2/repository/org/hibernate/orm/hibernate-core/6.5.2.Final/hibernate-core-6.5.2.Final.jar:/home/kalimain/.m2/repository/jakarta/persistence/jakarta.persistence-api/3.1.0/jakarta.persistence-api-3.1.0.jar:/home/kalimain/.m2/repository/jakarta/transaction/jakarta.transaction-api/2.0.1/jakarta.transaction-api-2.0.1.jar:/home/kalimain/.m2/repository/org/jboss/logging/jboss-logging/3.5.3.Final/jboss-logging-3.5.3.Final.jar:/home/kalimain/.m2/repository/org/hibernate/common/hibernate-commons-annotations/6.0.6.Final/hibernate-commons-annotations-6.0.6.Final.jar:/home/kalimain/.m2/repository/io/smallrye/jandex/3.1.2/jandex-3.1.2.jar:/home/kalimain/.m2/repository/com/fasterxml/classmate/1.7.0/classmate-1.7.0.jar:/home/kalimain/.m2/repository/net/bytebuddy/byte-buddy/1.14.16/byte-buddy-1.14.16.jar:/home/kalimain/.m2/repository/org/glassfish/jaxb/jaxb-runtime/4.0.5/jaxb-runtime-4.0.5.jar:/home/kalimain/.m2/repository/org/glassfish/jaxb/jaxb-core/4.0.5/jaxb-core-4.0.5.jar:/home/kalimain/.m2/repository/org/eclipse/angus/angus-activation/2.0.2/angus-activation-2.0.2.jar:/home/kalimain/.m2/repository/org/glassfish/jaxb/txw2/4.0.5/txw2-4.0.5.jar:/home/kalimain/.m2/repository/com/sun/istack/istack-commons-runtime/4.1.2/istack-commons-runtime-4.1.2.jar:/home/kalimain/.m2/repository/jakarta/inject/jakarta.inject-api/2.0.1/jakarta.inject-api-2.0.1.jar:/home/kalimain/.m2/repository/org/antlr/antlr4-runtime/4.13.0/antlr4-runtime-4.13.0.jar:/home/kalimain/.m2/repository/org/springframework/data/spring-data-jpa/3.3.0/spring-data-jpa-3.3.0.jar:/home/kalimain/.m2/repository/org/springframework/data/spring-data-commons/3.3.0/spring-data-commons-3.3.0.jar:/home/kalimain/.m2/repository/org/springframework/spring-orm/6.1.8/spring-orm-6.1.8.jar:/home/kalimain/.m2/repository/org/springframework/spring-context/6.1.8/spring-context-6.1.8.jar:/home/kalimain/.m2/repository/org/springframework/spring-tx/6.1.8/spring-tx-6.1.8.jar:/home/kalimain/.m2/repository/org/springframework/spring-beans/6.1.8/spring-beans-6.1.8.jar:/home/kalimain/.m2/repository/jakarta/annotation/jakarta.annotation-api/2.1.1/jakarta.annotation-api-2.1.1.jar:/home/kalimain/.m2/repository/org/slf4j/slf4j-api/2.0.13/slf4j-api-2.0.13.jar:/home/kalimain/.m2/repository/org/springframework/spring-aspects/6.1.8/spring-aspects-6.1.8.jar:/home/kalimain/.m2/repository/org/springframework/boot/spring-boot-starter-validation/3.3.0/spring-boot-starter-validation-3.3.0.jar:/home/kalimain/.m2/repository/org/springframework/boot/spring-boot-starter/3.3.0/spring-boot-starter-3.3.0.jar:/home/kalimain/.m2/repository/org/springframework/boot/spring-boot/3.3.0/spring-boot-3.3.0.jar:/home/kalimain/.m2/repository/org/springframework/boot/spring-boot-autoconfigure/3.3.0/spring-boot-autoconfigure-3.3.0.jar:/home/kalimain/.m2/repository/org/springframework/boot/spring-boot-starter-logging/3.3.0/spring-boot-starter-logging-3.3.0.jar:/home/kalimain/.m2/repository/ch/qos/logback/logback-classic/1.5.6/logback-classic-1.5.6.jar:/home/kalimain/.m2/repository/ch/qos/logback/logback-core/1.5.6/logback-core-1.5.6.jar:/home/kalimain/.m2/repository/org/apache/logging/log4j/log4j-to-slf4j/2.23.1/log4j-to-slf4j-2.23.1.jar:/home/kalimain/.m2/repository/org/apache/logging/log4j/log4j-api/2.23.1/log4j-api-2.23.1.jar:/home/kalimain/.m2/repository/org/slf4j/jul-to-slf4j/2.0.13/jul-to-slf4j-2.0.13.jar:/home/kalimain/.m2/repository/org/yaml/snakeyaml/2.2/snakeyaml-2.2.jar:/home/kalimain/.m2/repository/org/apache/tomcat/embed/tomcat-embed-el/10.1.24/tomcat-embed-el-10.1.24.jar:/home/kalimain/.m2/repository/org/hibernate/validator/hibernate-validator/8.0.1.Final/hibernate-validator-8.0.1.Final.jar:/home/kalimain/.m2/repository/jakarta/validation/jakarta.validation-api/3.0.2/jakarta.validation-api-3.0.2.jar:/home/kalimain/.m2/repository/org/springframework/boot/spring-boot-starter-web/3.3.0/spring-boot-starter-web-3.3.0.jar:/home/kalimain/.m2/repository/org/springframework/boot/spring-boot-starter-json/3.3.0/spring-boot-starter-json-3.3.0.jar:/home/kalimain/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.17.1/jackson-databind-2.17.1.jar:/home/kalimain/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.17.1/jackson-annotations-2.17.1.jar:/home/kalimain/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.17.1/jackson-core-2.17.1.jar:/home/kalimain/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-jdk8/2.17.1/jackson-datatype-jdk8-2.17.1.jar:/home/kalimain/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-jsr310/2.17.1/jackson-datatype-jsr310-2.17.1.jar:/home/kalimain/.m2/repository/com/fasterxml/jackson/module/jackson-module-parameter-names/2.17.1/jackson-module-parameter-names-2.17.1.jar:/home/kalimain/.m2/repository/org/springframework/boot/spring-boot-starter-tomcat/3.3.0/spring-boot-starter-tomcat-3.3.0.jar:/home/kalimain/.m2/repository/org/apache/tomcat/embed/tomcat-embed-core/10.1.24/tomcat-embed-core-10.1.24.jar:/home/kalimain/.m2/repository/org/apache/tomcat/embed/tomcat-embed-websocket/10.1.24/tomcat-embed-websocket-10.1.24.jar:/home/kalimain/.m2/repository/org/springframework/spring-web/6.1.8/spring-web-6.1.8.jar:/home/kalimain/.m2/repository/io/micrometer/micrometer-observation/1.13.0/micrometer-observation-1.13.0.jar:/home/kalimain/.m2/repository/io/micrometer/micrometer-commons/1.13.0/micrometer-commons-1.13.0.jar:/home/kalimain/.m2/repository/org/springframework/spring-webmvc/6.1.8/spring-webmvc-6.1.8.jar:/home/kalimain/.m2/repository/org/springframework/spring-expression/6.1.8/spring-expression-6.1.8.jar:/home/kalimain/.m2/repository/com/h2database/h2/2.2.224/h2-2.2.224.jar:/home/kalimain/.m2/repository/com/mysql/mysql-connector-j/8.3.0/mysql-connector-j-8.3.0.jar:/home/kalimain/.m2/repository/org/springframework/boot/spring-boot-starter-test/3.3.0/spring-boot-starter-test-3.3.0.jar:/home/kalimain/.m2/repository/org/springframework/boot/spring-boot-test/3.3.0/spring-boot-test-3.3.0.jar:/home/kalimain/.m2/repository/org/springframework/boot/spring-boot-test-autoconfigure/3.3.0/spring-boot-test-autoconfigure-3.3.0.jar:/home/kalimain/.m2/repository/com/jayway/jsonpath/json-path/2.9.0/json-path-2.9.0.jar:/home/kalimain/.m2/repository/jakarta/xml/bind/jakarta.xml.bind-api/4.0.2/jakarta.xml.bind-api-4.0.2.jar:/home/kalimain/.m2/repository/jakarta/activation/jakarta.activation-api/2.1.3/jakarta.activation-api-2.1.3.jar:/home/kalimain/.m2/repository/net/minidev/json-smart/2.5.1/json-smart-2.5.1.jar:/home/kalimain/.m2/repository/net/minidev/accessors-smart/2.5.1/accessors-smart-2.5.1.jar:/home/kalimain/.m2/repository/org/ow2/asm/asm/9.6/asm-9.6.jar:/home/kalimain/.m2/repository/org/assertj/assertj-core/3.25.3/assertj-core-3.25.3.jar:/home/kalimain/.m2/repository/org/awaitility/awaitility/4.2.1/awaitility-4.2.1.jar:/home/kalimain/.m2/repository/org/hamcrest/hamcrest/2.2/hamcrest-2.2.jar:/home/kalimain/.m2/repository/org/junit/jupiter/junit-jupiter/5.10.2/junit-jupiter-5.10.2.jar:/home/kalimain/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.10.2/junit-jupiter-api-5.10.2.jar:/home/kalimain/.m2/repository/org/opentest4j/opentest4j/1.3.0/opentest4j-1.3.0.jar:/home/kalimain/.m2/repository/org/junit/platform/junit-platform-commons/1.10.2/junit-platform-commons-1.10.2.jar:/home/kalimain/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/home/kalimain/.m2/repository/org/junit/jupiter/junit-jupiter-params/5.10.2/junit-jupiter-params-5.10.2.jar:/home/kalimain/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.10.2/junit-jupiter-engine-5.10.2.jar:/home/kalimain/.m2/repository/org/junit/platform/junit-platform-engine/1.10.2/junit-platform-engine-1.10.2.jar:/home/kalimain/.m2/repository/org/mockito/mockito-core/5.11.0/mockito-core-5.11.0.jar:/home/kalimain/.m2/repository/net/bytebuddy/byte-buddy-agent/1.14.16/byte-buddy-agent-1.14.16.jar:/home/kalimain/.m2/repository/org/objenesis/objenesis/3.3/objenesis-3.3.jar:/home/kalimain/.m2/repository/org/mockito/mockito-junit-jupiter/5.11.0/mockito-junit-jupiter-5.11.0.jar:/home/kalimain/.m2/repository/org/skyscreamer/jsonassert/1.5.1/jsonassert-1.5.1.jar:/home/kalimain/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar:/home/kalimain/.m2/repository/org/springframework/spring-core/6.1.8/spring-core-6.1.8.jar:/home/kalimain/.m2/repository/org/springframework/spring-jcl/6.1.8/spring-jcl-6.1.8.jar:/home/kalimain/.m2/repository/org/springframework/spring-test/6.1.8/spring-test-6.1.8.jar:/home/kalimain/.m2/repository/org/xmlunit/xmlunit-core/2.9.1/xmlunit-core-2.9.1.jar:/home/kalimain/workspace/ship-fast/libs/assessment-grader-0.0.1-SNAPSHOT.jar:"/>
+    <property name="java.vm.vendor" value="Amazon.com Inc."/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.vendor.url" value="https://aws.amazon.com/corretto/"/>
+    <property name="user.timezone" value="America/Sao_Paulo"/>
+    <property name="org.jboss.logging.provider" value="slf4j"/>
+    <property name="os.name" value="Linux"/>
+    <property name="java.vm.specification.version" value="25"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="US"/>
+    <property name="sun.boot.library.path" value="/home/kalimain/.sdkman/candidates/java/25.0.3-amzn/lib"/>
+    <property name="sun.java.command" value="/home/kalimain/workspace/ship-fast/target/surefire/surefirebooter-20260618140806111_3.jar /home/kalimain/workspace/ship-fast/target/surefire 2026-06-18T14-08-02_389-jvmRun1 surefire-20260618140806111_1tmp surefire_0-20260618140806111_2tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="/home/kalimain/workspace/ship-fast/target/test-classes:/home/kalimain/workspace/ship-fast/target/classes:/home/kalimain/.m2/repository/org/springframework/boot/spring-boot-starter-data-jpa/3.3.0/spring-boot-starter-data-jpa-3.3.0.jar:/home/kalimain/.m2/repository/org/springframework/boot/spring-boot-starter-aop/3.3.0/spring-boot-starter-aop-3.3.0.jar:/home/kalimain/.m2/repository/org/springframework/spring-aop/6.1.8/spring-aop-6.1.8.jar:/home/kalimain/.m2/repository/org/aspectj/aspectjweaver/1.9.22/aspectjweaver-1.9.22.jar:/home/kalimain/.m2/repository/org/springframework/boot/spring-boot-starter-jdbc/3.3.0/spring-boot-starter-jdbc-3.3.0.jar:/home/kalimain/.m2/repository/com/zaxxer/HikariCP/5.1.0/HikariCP-5.1.0.jar:/home/kalimain/.m2/repository/org/springframework/spring-jdbc/6.1.8/spring-jdbc-6.1.8.jar:/home/kalimain/.m2/repository/org/hibernate/orm/hibernate-core/6.5.2.Final/hibernate-core-6.5.2.Final.jar:/home/kalimain/.m2/repository/jakarta/persistence/jakarta.persistence-api/3.1.0/jakarta.persistence-api-3.1.0.jar:/home/kalimain/.m2/repository/jakarta/transaction/jakarta.transaction-api/2.0.1/jakarta.transaction-api-2.0.1.jar:/home/kalimain/.m2/repository/org/jboss/logging/jboss-logging/3.5.3.Final/jboss-logging-3.5.3.Final.jar:/home/kalimain/.m2/repository/org/hibernate/common/hibernate-commons-annotations/6.0.6.Final/hibernate-commons-annotations-6.0.6.Final.jar:/home/kalimain/.m2/repository/io/smallrye/jandex/3.1.2/jandex-3.1.2.jar:/home/kalimain/.m2/repository/com/fasterxml/classmate/1.7.0/classmate-1.7.0.jar:/home/kalimain/.m2/repository/net/bytebuddy/byte-buddy/1.14.16/byte-buddy-1.14.16.jar:/home/kalimain/.m2/repository/org/glassfish/jaxb/jaxb-runtime/4.0.5/jaxb-runtime-4.0.5.jar:/home/kalimain/.m2/repository/org/glassfish/jaxb/jaxb-core/4.0.5/jaxb-core-4.0.5.jar:/home/kalimain/.m2/repository/org/eclipse/angus/angus-activation/2.0.2/angus-activation-2.0.2.jar:/home/kalimain/.m2/repository/org/glassfish/jaxb/txw2/4.0.5/txw2-4.0.5.jar:/home/kalimain/.m2/repository/com/sun/istack/istack-commons-runtime/4.1.2/istack-commons-runtime-4.1.2.jar:/home/kalimain/.m2/repository/jakarta/inject/jakarta.inject-api/2.0.1/jakarta.inject-api-2.0.1.jar:/home/kalimain/.m2/repository/org/antlr/antlr4-runtime/4.13.0/antlr4-runtime-4.13.0.jar:/home/kalimain/.m2/repository/org/springframework/data/spring-data-jpa/3.3.0/spring-data-jpa-3.3.0.jar:/home/kalimain/.m2/repository/org/springframework/data/spring-data-commons/3.3.0/spring-data-commons-3.3.0.jar:/home/kalimain/.m2/repository/org/springframework/spring-orm/6.1.8/spring-orm-6.1.8.jar:/home/kalimain/.m2/repository/org/springframework/spring-context/6.1.8/spring-context-6.1.8.jar:/home/kalimain/.m2/repository/org/springframework/spring-tx/6.1.8/spring-tx-6.1.8.jar:/home/kalimain/.m2/repository/org/springframework/spring-beans/6.1.8/spring-beans-6.1.8.jar:/home/kalimain/.m2/repository/jakarta/annotation/jakarta.annotation-api/2.1.1/jakarta.annotation-api-2.1.1.jar:/home/kalimain/.m2/repository/org/slf4j/slf4j-api/2.0.13/slf4j-api-2.0.13.jar:/home/kalimain/.m2/repository/org/springframework/spring-aspects/6.1.8/spring-aspects-6.1.8.jar:/home/kalimain/.m2/repository/org/springframework/boot/spring-boot-starter-validation/3.3.0/spring-boot-starter-validation-3.3.0.jar:/home/kalimain/.m2/repository/org/springframework/boot/spring-boot-starter/3.3.0/spring-boot-starter-3.3.0.jar:/home/kalimain/.m2/repository/org/springframework/boot/spring-boot/3.3.0/spring-boot-3.3.0.jar:/home/kalimain/.m2/repository/org/springframework/boot/spring-boot-autoconfigure/3.3.0/spring-boot-autoconfigure-3.3.0.jar:/home/kalimain/.m2/repository/org/springframework/boot/spring-boot-starter-logging/3.3.0/spring-boot-starter-logging-3.3.0.jar:/home/kalimain/.m2/repository/ch/qos/logback/logback-classic/1.5.6/logback-classic-1.5.6.jar:/home/kalimain/.m2/repository/ch/qos/logback/logback-core/1.5.6/logback-core-1.5.6.jar:/home/kalimain/.m2/repository/org/apache/logging/log4j/log4j-to-slf4j/2.23.1/log4j-to-slf4j-2.23.1.jar:/home/kalimain/.m2/repository/org/apache/logging/log4j/log4j-api/2.23.1/log4j-api-2.23.1.jar:/home/kalimain/.m2/repository/org/slf4j/jul-to-slf4j/2.0.13/jul-to-slf4j-2.0.13.jar:/home/kalimain/.m2/repository/org/yaml/snakeyaml/2.2/snakeyaml-2.2.jar:/home/kalimain/.m2/repository/org/apache/tomcat/embed/tomcat-embed-el/10.1.24/tomcat-embed-el-10.1.24.jar:/home/kalimain/.m2/repository/org/hibernate/validator/hibernate-validator/8.0.1.Final/hibernate-validator-8.0.1.Final.jar:/home/kalimain/.m2/repository/jakarta/validation/jakarta.validation-api/3.0.2/jakarta.validation-api-3.0.2.jar:/home/kalimain/.m2/repository/org/springframework/boot/spring-boot-starter-web/3.3.0/spring-boot-starter-web-3.3.0.jar:/home/kalimain/.m2/repository/org/springframework/boot/spring-boot-starter-json/3.3.0/spring-boot-starter-json-3.3.0.jar:/home/kalimain/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.17.1/jackson-databind-2.17.1.jar:/home/kalimain/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.17.1/jackson-annotations-2.17.1.jar:/home/kalimain/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.17.1/jackson-core-2.17.1.jar:/home/kalimain/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-jdk8/2.17.1/jackson-datatype-jdk8-2.17.1.jar:/home/kalimain/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-jsr310/2.17.1/jackson-datatype-jsr310-2.17.1.jar:/home/kalimain/.m2/repository/com/fasterxml/jackson/module/jackson-module-parameter-names/2.17.1/jackson-module-parameter-names-2.17.1.jar:/home/kalimain/.m2/repository/org/springframework/boot/spring-boot-starter-tomcat/3.3.0/spring-boot-starter-tomcat-3.3.0.jar:/home/kalimain/.m2/repository/org/apache/tomcat/embed/tomcat-embed-core/10.1.24/tomcat-embed-core-10.1.24.jar:/home/kalimain/.m2/repository/org/apache/tomcat/embed/tomcat-embed-websocket/10.1.24/tomcat-embed-websocket-10.1.24.jar:/home/kalimain/.m2/repository/org/springframework/spring-web/6.1.8/spring-web-6.1.8.jar:/home/kalimain/.m2/repository/io/micrometer/micrometer-observation/1.13.0/micrometer-observation-1.13.0.jar:/home/kalimain/.m2/repository/io/micrometer/micrometer-commons/1.13.0/micrometer-commons-1.13.0.jar:/home/kalimain/.m2/repository/org/springframework/spring-webmvc/6.1.8/spring-webmvc-6.1.8.jar:/home/kalimain/.m2/repository/org/springframework/spring-expression/6.1.8/spring-expression-6.1.8.jar:/home/kalimain/.m2/repository/com/h2database/h2/2.2.224/h2-2.2.224.jar:/home/kalimain/.m2/repository/com/mysql/mysql-connector-j/8.3.0/mysql-connector-j-8.3.0.jar:/home/kalimain/.m2/repository/org/springframework/boot/spring-boot-starter-test/3.3.0/spring-boot-starter-test-3.3.0.jar:/home/kalimain/.m2/repository/org/springframework/boot/spring-boot-test/3.3.0/spring-boot-test-3.3.0.jar:/home/kalimain/.m2/repository/org/springframework/boot/spring-boot-test-autoconfigure/3.3.0/spring-boot-test-autoconfigure-3.3.0.jar:/home/kalimain/.m2/repository/com/jayway/jsonpath/json-path/2.9.0/json-path-2.9.0.jar:/home/kalimain/.m2/repository/jakarta/xml/bind/jakarta.xml.bind-api/4.0.2/jakarta.xml.bind-api-4.0.2.jar:/home/kalimain/.m2/repository/jakarta/activation/jakarta.activation-api/2.1.3/jakarta.activation-api-2.1.3.jar:/home/kalimain/.m2/repository/net/minidev/json-smart/2.5.1/json-smart-2.5.1.jar:/home/kalimain/.m2/repository/net/minidev/accessors-smart/2.5.1/accessors-smart-2.5.1.jar:/home/kalimain/.m2/repository/org/ow2/asm/asm/9.6/asm-9.6.jar:/home/kalimain/.m2/repository/org/assertj/assertj-core/3.25.3/assertj-core-3.25.3.jar:/home/kalimain/.m2/repository/org/awaitility/awaitility/4.2.1/awaitility-4.2.1.jar:/home/kalimain/.m2/repository/org/hamcrest/hamcrest/2.2/hamcrest-2.2.jar:/home/kalimain/.m2/repository/org/junit/jupiter/junit-jupiter/5.10.2/junit-jupiter-5.10.2.jar:/home/kalimain/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.10.2/junit-jupiter-api-5.10.2.jar:/home/kalimain/.m2/repository/org/opentest4j/opentest4j/1.3.0/opentest4j-1.3.0.jar:/home/kalimain/.m2/repository/org/junit/platform/junit-platform-commons/1.10.2/junit-platform-commons-1.10.2.jar:/home/kalimain/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/home/kalimain/.m2/repository/org/junit/jupiter/junit-jupiter-params/5.10.2/junit-jupiter-params-5.10.2.jar:/home/kalimain/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.10.2/junit-jupiter-engine-5.10.2.jar:/home/kalimain/.m2/repository/org/junit/platform/junit-platform-engine/1.10.2/junit-platform-engine-1.10.2.jar:/home/kalimain/.m2/repository/org/mockito/mockito-core/5.11.0/mockito-core-5.11.0.jar:/home/kalimain/.m2/repository/net/bytebuddy/byte-buddy-agent/1.14.16/byte-buddy-agent-1.14.16.jar:/home/kalimain/.m2/repository/org/objenesis/objenesis/3.3/objenesis-3.3.jar:/home/kalimain/.m2/repository/org/mockito/mockito-junit-jupiter/5.11.0/mockito-junit-jupiter-5.11.0.jar:/home/kalimain/.m2/repository/org/skyscreamer/jsonassert/1.5.1/jsonassert-1.5.1.jar:/home/kalimain/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar:/home/kalimain/.m2/repository/org/springframework/spring-core/6.1.8/spring-core-6.1.8.jar:/home/kalimain/.m2/repository/org/springframework/spring-jcl/6.1.8/spring-jcl-6.1.8.jar:/home/kalimain/.m2/repository/org/springframework/spring-test/6.1.8/spring-test-6.1.8.jar:/home/kalimain/.m2/repository/org/xmlunit/xmlunit-core/2.9.1/xmlunit-core-2.9.1.jar:/home/kalimain/workspace/ship-fast/libs/assessment-grader-0.0.1-SNAPSHOT.jar:"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="/home/kalimain"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2026-04-21"/>
+    <property name="java.home" value="/home/kalimain/.sdkman/candidates/java/25.0.3-amzn"/>
+    <property name="file.separator" value="/"/>
+    <property name="basedir" value="/home/kalimain/workspace/ship-fast"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="FILE_LOG_CHARSET" value="UTF-8"/>
+    <property name="java.awt.headless" value="true"/>
+    <property name="surefire.real.class.path" value="/home/kalimain/workspace/ship-fast/target/surefire/surefirebooter-20260618140806111_3.jar"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="25.0.3+9-LTS"/>
+    <property name="user.name" value="kalimain"/>
+    <property name="stdout.encoding" value="UTF-8"/>
+    <property name="path.separator" value=":"/>
+    <property name="os.version" value="6.18.12+kali-amd64"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="java.vendor.version" value="Corretto-25.0.3.9.1"/>
+    <property name="localRepository" value="/home/kalimain/.m2/repository"/>
+    <property name="java.vendor.url.bug" value="https://github.com/corretto/corretto-25/issues/"/>
+    <property name="java.io.tmpdir" value="/tmp"/>
+    <property name="com.zaxxer.hikari.pool_number" value="1"/>
+    <property name="java.version" value="25.0.3"/>
+    <property name="user.dir" value="/home/kalimain/workspace/ship-fast"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="PID" value="95126"/>
+    <property name="CONSOLE_LOG_CHARSET" value="UTF-8"/>
+    <property name="native.encoding" value="UTF-8"/>
+    <property name="java.library.path" value="/usr/java/packages/lib:/usr/lib64:/lib64:/lib:/usr/lib"/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="stderr.encoding" value="UTF-8"/>
+    <property name="java.vendor" value="Amazon.com Inc."/>
+    <property name="java.vm.version" value="25.0.3+9-LTS"/>
+    <property name="stdin.encoding" value="UTF-8"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="69.0"/>
+    <property name="LOGGED_APPLICATION_NAME" value="[assessment-grader] "/>
+  </properties>
+  <testcase name="exerciseGrader" classname="com.shipfast.DeliveryTripIntegrationTest" time="4.093">
+    <system-out><![CDATA[14:08:08.814 [main] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.shipfast.DeliveryTripIntegrationTest]: DeliveryTripIntegrationTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+14:08:09.110 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.shipfast.ShipFastApplication for test class com.shipfast.DeliveryTripIntegrationTest
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v3.3.0)
+
+2026-06-18T14:08:10.266-03:00  INFO 95126 --- [assessment-grader] [           main] c.shipfast.DeliveryTripIntegrationTest   : Starting DeliveryTripIntegrationTest using Java 25.0.3 with PID 95126 (started by kalimain in /home/kalimain/workspace/ship-fast)
+2026-06-18T14:08:10.270-03:00  INFO 95126 --- [assessment-grader] [           main] c.shipfast.DeliveryTripIntegrationTest   : The following 1 profile is active: "test"
+2026-06-18T14:08:12.368-03:00  INFO 95126 --- [assessment-grader] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-06-18T14:08:12.484-03:00  INFO 95126 --- [assessment-grader] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 102 ms. Found 2 JPA repository interfaces.
+2026-06-18T14:08:13.769-03:00  INFO 95126 --- [assessment-grader] [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-06-18T14:08:13.929-03:00  INFO 95126 --- [assessment-grader] [           main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2026-06-18T14:08:14.000-03:00  INFO 95126 --- [assessment-grader] [           main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-06-18T14:08:14.725-03:00  INFO 95126 --- [assessment-grader] [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-06-18T14:08:14.785-03:00  INFO 95126 --- [assessment-grader] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-06-18T14:08:15.246-03:00  INFO 95126 --- [assessment-grader] [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
+2026-06-18T14:08:15.249-03:00  INFO 95126 --- [assessment-grader] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-06-18T14:08:15.292-03:00  WARN 95126 --- [assessment-grader] [           main] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-06-18T14:08:16.898-03:00  INFO 95126 --- [assessment-grader] [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+Hibernate: drop table if exists delivery_trips cascade 
+Hibernate: drop table if exists vehicles cascade 
+Hibernate: create table delivery_trips (cargo_weight_kg float(53) not null, distance_km float(53) not null, fuel_consumption_liters float(53), id bigint generated by default as identity, vehicle_id bigint not null, destination varchar(255) not null, status enum ('COMPLETED','IN_PROGRESS','PENDING') not null, primary key (id))
+Hibernate: create table vehicles (fuel_efficiency float(53) not null, max_capacity_kg float(53) not null, id bigint generated by default as identity, license_plate varchar(255) not null unique, primary key (id))
+Hibernate: alter table if exists delivery_trips add constraint FKmjs8olu2fy49vw2m6vbfveoey foreign key (vehicle_id) references vehicles
+2026-06-18T14:08:17.036-03:00  INFO 95126 --- [assessment-grader] [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-06-18T14:08:18.084-03:00  WARN 95126 --- [assessment-grader] [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-06-18T14:08:18.923-03:00  INFO 95126 --- [assessment-grader] [           main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2026-06-18T14:08:18.923-03:00  INFO 95126 --- [assessment-grader] [           main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2026-06-18T14:08:18.927-03:00  INFO 95126 --- [assessment-grader] [           main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 2 ms
+2026-06-18T14:08:18.979-03:00  INFO 95126 --- [assessment-grader] [           main] c.shipfast.DeliveryTripIntegrationTest   : Started DeliveryTripIntegrationTest in 9.531 seconds (process running for 12.59)
+Hibernate: select dt1_0.id,dt1_0.cargo_weight_kg,dt1_0.destination,dt1_0.distance_km,dt1_0.fuel_consumption_liters,dt1_0.status,dt1_0.vehicle_id from delivery_trips dt1_0
+Hibernate: select v1_0.id,v1_0.fuel_efficiency,v1_0.license_plate,v1_0.max_capacity_kg from vehicles v1_0
+Hibernate: insert into vehicles (fuel_efficiency,license_plate,max_capacity_kg,id) values (?,?,?,default)
+]]></system-out>
+    <system-err><![CDATA[WARNING: A Java agent has been loaded dynamically (/home/kalimain/.m2/repository/net/bytebuddy/byte-buddy-agent/1.14.16/byte-buddy-agent-1.14.16.jar)
+WARNING: If a serviceability tool is in use, please run with -XX:+EnableDynamicAgentLoading to hide this warning
+WARNING: If a serviceability tool is not in use, please run with -Djdk.instrument.traceUsage for more information
+WARNING: Dynamic loading of agents will be disallowed by default in a future release
+]]></system-err>
+  </testcase>
+  <testcase name="shouldCompleteTripWithCorrectFuelCalculation" classname="com.shipfast.DeliveryTripIntegrationTest" time="0.64">
+    <failure message="&#10;expected: COMPLETED&#10; but was: PENDING" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: 
+
+expected: COMPLETED
+ but was: PENDING
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at com.shipfast.DeliveryTripIntegrationTest.shouldCompleteTripWithCorrectFuelCalculation(DeliveryTripIntegrationTest.java:99)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+]]></failure>
+    <system-out><![CDATA[Hibernate: select dt1_0.id,dt1_0.cargo_weight_kg,dt1_0.destination,dt1_0.distance_km,dt1_0.fuel_consumption_liters,dt1_0.status,dt1_0.vehicle_id from delivery_trips dt1_0
+Hibernate: select v1_0.id,v1_0.fuel_efficiency,v1_0.license_plate,v1_0.max_capacity_kg from vehicles v1_0
+Hibernate: delete from vehicles where id=?
+Hibernate: insert into vehicles (fuel_efficiency,license_plate,max_capacity_kg,id) values (?,?,?,default)
+Hibernate: insert into delivery_trips (cargo_weight_kg,destination,distance_km,fuel_consumption_liters,status,vehicle_id,id) values (?,?,?,?,?,?,default)
+Hibernate: select dt1_0.id,dt1_0.cargo_weight_kg,dt1_0.destination,dt1_0.distance_km,dt1_0.fuel_consumption_liters,dt1_0.status,dt1_0.vehicle_id,v1_0.id,v1_0.fuel_efficiency,v1_0.license_plate,v1_0.max_capacity_kg from delivery_trips dt1_0 join vehicles v1_0 on v1_0.id=dt1_0.vehicle_id where dt1_0.id=?
+
+MockHttpServletRequest:
+      HTTP Method = POST
+      Request URI = /api/trips/1/complete
+       Parameters = {}
+          Headers = []
+             Body = null
+    Session Attrs = {}
+
+Handler:
+             Type = com.shipfast.controller.DeliveryTripController
+           Method = com.shipfast.controller.DeliveryTripController#completeTrip(Long)
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = null
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 200
+    Error message = null
+          Headers = []
+     Content type = null
+             Body = 
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+]]></system-out>
+  </testcase>
+  <testcase name="shouldCreateValidTrip" classname="com.shipfast.DeliveryTripIntegrationTest" time="0.407">
+    <failure message="&#10;Expected size: 1 but was: 0 in:&#10;[]" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: 
+
+Expected size: 1 but was: 0 in:
+[]
+	at com.shipfast.DeliveryTripIntegrationTest.shouldCreateValidTrip(DeliveryTripIntegrationTest.java:60)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+]]></failure>
+    <system-out><![CDATA[Hibernate: select dt1_0.id,dt1_0.cargo_weight_kg,dt1_0.destination,dt1_0.distance_km,dt1_0.fuel_consumption_liters,dt1_0.status,dt1_0.vehicle_id from delivery_trips dt1_0
+Hibernate: select v1_0.id,v1_0.fuel_efficiency,v1_0.license_plate,v1_0.max_capacity_kg from vehicles v1_0 where v1_0.id=?
+Hibernate: delete from delivery_trips where id=?
+Hibernate: select v1_0.id,v1_0.fuel_efficiency,v1_0.license_plate,v1_0.max_capacity_kg from vehicles v1_0
+Hibernate: delete from vehicles where id=?
+Hibernate: insert into vehicles (fuel_efficiency,license_plate,max_capacity_kg,id) values (?,?,?,default)
+Hibernate: select dt1_0.id,dt1_0.cargo_weight_kg,dt1_0.destination,dt1_0.distance_km,dt1_0.fuel_consumption_liters,dt1_0.status,dt1_0.vehicle_id from delivery_trips dt1_0
+
+MockHttpServletRequest:
+      HTTP Method = POST
+      Request URI = /api/trips
+       Parameters = {}
+          Headers = [Content-Type:"application/json;charset=UTF-8", Content-Length:"83"]
+             Body = {"vehicleId":3,"destination":"São Paulo","cargoWeightKg":500.0,"distanceKm":100.0}
+    Session Attrs = {}
+
+Handler:
+             Type = com.shipfast.controller.DeliveryTripController
+           Method = com.shipfast.controller.DeliveryTripController#createTrip(CreateTripRequest)
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = null
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 201
+    Error message = null
+          Headers = []
+     Content type = null
+             Body = 
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+]]></system-out>
+  </testcase>
+  <testcase name="shouldRejectTripExceedingCapacity" classname="com.shipfast.DeliveryTripIntegrationTest" time="0.091">
+    <failure message="Status expected:&lt;400&gt; but was:&lt;201&gt;" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: Status expected:<400> but was:<201>
+	at org.springframework.test.util.AssertionErrors.fail(AssertionErrors.java:59)
+	at org.springframework.test.util.AssertionErrors.assertEquals(AssertionErrors.java:122)
+	at org.springframework.test.web.servlet.result.StatusResultMatchers.lambda$matcher$9(StatusResultMatchers.java:637)
+	at org.springframework.test.web.servlet.MockMvc$1.andExpect(MockMvc.java:214)
+	at com.shipfast.DeliveryTripIntegrationTest.shouldRejectTripExceedingCapacity(DeliveryTripIntegrationTest.java:80)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+]]></failure>
+    <system-out><![CDATA[Hibernate: select dt1_0.id,dt1_0.cargo_weight_kg,dt1_0.destination,dt1_0.distance_km,dt1_0.fuel_consumption_liters,dt1_0.status,dt1_0.vehicle_id from delivery_trips dt1_0
+Hibernate: select v1_0.id,v1_0.fuel_efficiency,v1_0.license_plate,v1_0.max_capacity_kg from vehicles v1_0
+Hibernate: delete from vehicles where id=?
+Hibernate: insert into vehicles (fuel_efficiency,license_plate,max_capacity_kg,id) values (?,?,?,default)
+
+MockHttpServletRequest:
+      HTTP Method = POST
+      Request URI = /api/trips
+       Parameters = {}
+          Headers = [Content-Type:"application/json;charset=UTF-8", Content-Length:"88"]
+             Body = {"vehicleId":4,"destination":"Rio de Janeiro","cargoWeightKg":1500.0,"distanceKm":200.0}
+    Session Attrs = {}
+
+Handler:
+             Type = com.shipfast.controller.DeliveryTripController
+           Method = com.shipfast.controller.DeliveryTripController#createTrip(CreateTripRequest)
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = null
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 201
+    Error message = null
+          Headers = []
+     Content type = null
+             Body = 
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+]]></system-out>
+  </testcase>
+</testsuite>
