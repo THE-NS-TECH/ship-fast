@@ -22,14 +22,12 @@ public class DeliveryTripController {
     @PostMapping
     @ResponseStatus(HttpStatus.CREATED)
     public DeliveryTrip createTrip(@RequestBody @Valid CreateTripRequest request) {
-        // TODO: Call service to create trip
-        return null;
+        return tripService.createTrip(request);
     }
 
     @PostMapping("/{id}/complete")
     public DeliveryTrip completeTrip(@PathVariable Long id) {
-        // TODO: Call service to complete trip
-        return null;
+        return tripService.completeTrip(id);
     }
 
     @GetMapping

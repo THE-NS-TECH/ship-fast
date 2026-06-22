@@ -1,0 +1,12 @@
+# -----------------------------------------------------------------------------
+# terraform.tfvars.example (GCP)
+# Copie este arquivo para 'terraform.tfvars' e configure seus valores reais.
+# -----------------------------------------------------------------------------
+
+gcp_project    = "seu-projeto-gcp-id"
+gcp_region     = "us-central1"
+gcp_zone       = "us-central1-a"
+machine_type   = "e2-micro"
+ssh_user       = "ubuntu"
+ssh_public_key = "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQC..."
+db_password    = "InsiraUmaSenhaExtremamenteForteAqui123!"

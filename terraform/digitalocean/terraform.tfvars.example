@@ -1,0 +1,9 @@
+# -----------------------------------------------------------------------------
+# terraform.tfvars.example (DigitalOcean)
+# Copie este arquivo para 'terraform.tfvars' e configure seus valores reais.
+# -----------------------------------------------------------------------------
+
+do_token       = "dop_v1_sua_api_token_aqui..."
+ssh_public_key = "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQC..."
+region         = "nyc3"
+droplet_size   = "s-1vcpu-2gb"

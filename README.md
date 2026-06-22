@@ -64,6 +64,50 @@ mvn spring-boot:run
 
 ---
 
+## 🚀 Deploy e Infraestrutura (IaC) Multi-Cloud
+
+Este projeto possui infraestrutura como código (IaC) utilizando **Terraform** e orquestração de containers com **Docker Compose**. O ambiente está estruturado para suportar múltiplos provedores de nuvem de maneira independente e reprodutível.
+
+### Estrutura do Terraform (`/terraform`)
+
+A infraestrutura foi organizada em subdiretórios específicos para cada provedor de nuvem:
+* **DigitalOcean** (`/terraform/digitalocean`): Provisiona um Droplet Ubuntu, banco de dados gerenciado MySQL e chaves SSH.
+* **AWS** (`/terraform/aws`): Provisiona VPC, Subnets Públicas, Security Groups, Instância EC2 (com Docker) e RDS MySQL.
+* **GCP** (`/terraform/gcp`): Provisiona VPC Network, Subnet, Firewall rules, VM Compute Engine (com Docker) e Cloud SQL MySQL.
+* **Azure** (`/terraform/azure`): Resource Group, VNet, Subnet, NSG, VM Linux (com Docker) e Azure Database for MySQL Flexible Server.
+
+Cada pasta contém seu próprio conjunto de arquivos (`main.tf`, `variables.tf`, `network.tf`, `compute.tf`, `database.tf`, `outputs.tf`).
+
+### Como subir a infraestrutura na sua Cloud
+
+1. Entre no diretório do provedor desejado:
+   ```bash
+   cd terraform/digitalocean  # ou aws, gcp, azure
+   ```
+2. Prepare as variáveis de ambiente:
+   - Copie o arquivo de exemplo: `cp terraform.tfvars.example terraform.tfvars`
+   - Abra o `terraform.tfvars` e configure suas credenciais, chave SSH pública e senhas com segurança.
+3. Inicialize o Terraform:
+   ```bash
+   terraform init
+   ```
+4. Valide e planeje a infraestrutura:
+   ```bash
+   terraform plan
+   ```
+5. Aplique a infraestrutura:
+   ```bash
+   terraform apply -auto-approve
+   ```
+6. O Terraform retornará o `app_public_ip` (e o endpoint do banco). Acesse a máquina gerada via SSH, faça o clone do repositório e execute:
+   ```bash
+   docker-compose up -d --build
+   ```
+
+Isso subirá os containers da Aplicação, MySQL, RabbitMQ, Prometheus e Grafana na máquina virtual provisionada.
+
+---
+
 ## 📬 Entrega
 
 1. Garanta que **todos os testes** estão passando com sucesso (`BUILD SUCCESS`).
