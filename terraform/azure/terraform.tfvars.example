@@ -1,0 +1,11 @@
+# -----------------------------------------------------------------------------
+# terraform.tfvars.example (Azure)
+# Copie este arquivo para 'terraform.tfvars' e configure seus valores reais.
+# -----------------------------------------------------------------------------
+
+location            = "East US"
+resource_group_name = "shipfast-rg"
+vm_size             = "Standard_B1s"
+admin_username      = "azureuser"
+ssh_public_key      = "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQC..."
+db_password         = "InsiraUmaSenhaExtremamenteForteAqui123!"

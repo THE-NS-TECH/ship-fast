@@ -1,0 +1,9 @@
+com\shipfast\service\DeliveryTripServiceTest.class
+com\shipfast\controller\DeliveryTripControllerTest.class
+com\shipfast\DeliveryTripIntegrationTest.class
+com\shipfast\config\TestConfig.class
+com\shipfast\controller\DeliveryTripControllerTest$CompleteTripEndpointTests.class
+com\shipfast\service\DeliveryTripServiceTest$CreateTripTests.class
+com\shipfast\controller\DeliveryTripControllerTest$ListTripsEndpointTests.class
+com\shipfast\service\DeliveryTripServiceTest$CompleteTripTests.class
+com\shipfast\controller\DeliveryTripControllerTest$CreateTripEndpointTests.class

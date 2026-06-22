@@ -1,0 +1,11 @@
+# -----------------------------------------------------------------------------
+# terraform.tfvars.example (AWS)
+# Copie este arquivo para 'terraform.tfvars' e configure seus valores reais.
+# -----------------------------------------------------------------------------
+
+aws_region     = "us-east-1"
+instance_type  = "t3.micro"
+ssh_public_key = "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQC..."
+db_name        = "shipfast"
+db_user        = "shipfast_user"
+db_password    = "InsiraUmaSenhaExtremamenteForteAqui123!"
